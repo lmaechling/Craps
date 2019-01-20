@@ -63,11 +63,13 @@ public class Craps
                     else 
                     {   
                         point = roll1;
+                        System.out.println("Your point is " + point + ".");
                         System.out.println("Roll again.");
                         String answer4 = in.nextLine();
                         if (answer4.equals(""))
                         {
                             roll2 = IntStream.of(dice.rollTwo()).sum();
+                            System.out.println("You rolled a " + roll2 + ".");
                             if (roll2 == 7)
                             {
                                 System.out.println("You lost.");
@@ -87,6 +89,7 @@ public class Craps
                                 if (answer5.equals(""))
                                 {
                                     roll2 = IntStream.of(dice.rollTwo()).sum();
+                                    System.out.println("You rolled a " + roll2 + ".");
                                     if (roll2 == 7)
                                     {
                                         System.out.println("You lost.");
@@ -103,6 +106,7 @@ public class Craps
                                     {
                                         System.out.println("Roll again.");
                                         String answer6 = in.nextLine();
+                                        System.out.println("You rolled a " + roll2 + ".");
                                         if (answer6.equals(""))
                                         {
                                             roll2 = IntStream.of(dice.rollTwo()).sum();
