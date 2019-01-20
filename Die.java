@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Die here.
+ * Models a singular die.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Lily Maechling
+ * @version 1/18/19
  */
 public class Die
 {
