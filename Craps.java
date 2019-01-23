@@ -122,6 +122,50 @@ public class Craps
                                                 singleGame = false;
                                                 break;
                                             }
+                                            else
+                                            {
+                                                System.out.println("Roll again.");
+                                                String answer7 = in.nextLine();
+                                                System.out.println("You rolled a " + roll2 + ".");
+                                                if (answer7.equals(""))
+                                                {
+                                                    roll2 = IntStream.of(dice.rollTwo()).sum();
+                                                    if (roll2 == 7)
+                                                    {
+                                                        System.out.println("You lost.");
+                                                        singleGame = false;
+                                                        break;
+                                                    }
+                                                    else if(roll2 == point)
+                                                    {
+                                                        System.out.println("Congrats! You won!");
+                                                        singleGame = false;
+                                                        break;
+                                                    }
+                                                    else
+                                                    {
+                                                        System.out.println("Roll again.");
+                                                        String answer8 = in.nextLine();
+                                                        System.out.println("You rolled a " + roll2 + ".");
+                                                        if (answer8.equals(""))
+                                                        {
+                                                            roll2 = IntStream.of(dice.rollTwo()).sum();
+                                                            if (roll2 == 7)
+                                                            {
+                                                                System.out.println("You lost.");
+                                                                singleGame = false;
+                                                                break;
+                                                            }
+                                                            else if(roll2 == point)
+                                                            {
+                                                                System.out.println("Congrats! You won!");
+                                                                singleGame = false;
+                                                                break;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -138,16 +182,13 @@ public class Craps
             String answerfinal = in.nextLine();
             if (answerfinal.equalsIgnoreCase("N"))
                 wannaPlay=false;
+            else 
+            {   
+                wannaPlay = true;
+                singleGame = true;
+            }
         }
         System.out.println("Have a nice day.");
     }
 }
-/**
-public static double sumRoll()
-{
-Dice dice = new Dice();
-return IntStream.of(dice.rollTwo()).sum();
-}
-}
- */
 
