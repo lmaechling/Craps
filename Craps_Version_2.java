@@ -13,10 +13,9 @@ public class Craps_Version_2
     public static void main(String[] args)
     {
         System.out.println("Let's play a game of Craps");
+        giveInstructions();
         while (wannaPlay())
-        {
            startGame(); 
-        }
     }
 
     public static boolean wannaPlay()
