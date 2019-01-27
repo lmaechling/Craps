@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
+PROJECT TITLE: Craps
+PURPOSE OF PROJECT: To model of dice game of Craps.
+VERSION or DATE: 1/22/18
 HOW TO START THIS PROJECT:
-AUTHORS:
+AUTHORS: Lily Maechling
 USER INSTRUCTIONS:
